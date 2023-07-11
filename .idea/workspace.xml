@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34cdb107-b1cf-42bc-a557-bb0ac71570c5" name="Changes" comment="Find Median Age">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/netflix/popularityAnalysis/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/netflix/popularityAnalysis/SolutionTest.java" afterDir="false" />
+    <list default="true" id="34cdb107-b1cf-42bc-a557-bb0ac71570c5" name="Changes" comment="Fetch Most Recently Watched Titles - LRU Cache">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/netflix/fetchMostRecentlyWatchedTitles/LRUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/netflix/fetchMostRecentlyWatchedTitles/LinkedListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/netflix/fetchMostRecentlyWatchedTitles/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/netflix/fetchMostRecentlyWatchedTitles/LRUCacheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,40 +71,38 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.netflix.fetchMostRecentlyWatchedTitles" />
       <recent name="org.example.netflix.popularityAnalysis" />
       <recent name="org.example.netflix.findMedianAge" />
       <recent name="org.example.netflix.fetchTopMovies" />
       <recent name="org.example.netflix.groupsmilartitle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.isMonotonic">
-    <configuration name="MainTest.groupTitles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.LRUCache">
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.netflix.fetchMostRecentlyWatchedTitles.LRUCache" />
       <module name="DecodeCodingInterview" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.netflix.groupsmilartitle.*" />
+          <option name="PATTERN" value="org.example.netflix.fetchMostRecentlyWatchedTitles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.netflix.groupsmilartitle" />
-      <option name="MAIN_CLASS_NAME" value="org.example.netflix.groupsmilartitle.MainTest" />
-      <option name="METHOD_NAME" value="groupTitles" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.merge2Country" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LRUCacheTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DecodeCodingInterview" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.netflix.fetchTopMovies.*" />
+          <option name="PATTERN" value="org.example.netflix.fetchMostRecentlyWatchedTitles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.netflix.fetchTopMovies" />
-      <option name="MAIN_CLASS_NAME" value="org.example.netflix.fetchTopMovies.MainTest" />
-      <option name="METHOD_NAME" value="merge2Country" />
+      <option name="PACKAGE_NAME" value="org.example.netflix.fetchMostRecentlyWatchedTitles" />
+      <option name="MAIN_CLASS_NAME" value="org.example.netflix.fetchMostRecentlyWatchedTitles.LRUCacheTest" />
+      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LRUCache" />
+        <item itemvalue="JUnit.LRUCacheTest.get" />
         <item itemvalue="JUnit.SolutionTest.isMonotonic" />
         <item itemvalue="JUnit.MedianOfAgesTest.findMedian" />
         <item itemvalue="JUnit.MainTest.mergeKCounty" />
-        <item itemvalue="JUnit.MainTest.merge2Country" />
-        <item itemvalue="JUnit.MainTest.groupTitles" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +179,11 @@
       <workItem from="1687895965090" duration="265000" />
       <workItem from="1687964754903" duration="1395000" />
       <workItem from="1688066920606" duration="3000" />
-      <workItem from="1688229048093" duration="2903000" />
+      <workItem from="1688229048093" duration="4521000" />
+      <workItem from="1688234022090" duration="755000" />
+      <workItem from="1688235150826" duration="938000" />
+      <workItem from="1688407722602" duration="5000" />
+      <workItem from="1689100175960" duration="861000" />
     </task>
     <task id="LOCAL-00001" summary="Netflix Group Similar Titles">
       <created>1687887700811</created>
@@ -201,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688231762579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Popularity Analysis - Monotonic Array">
+      <created>1688232485728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688232485728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +223,8 @@
     <MESSAGE value="Netflix Group Similar Titles" />
     <MESSAGE value="Fetch Top Movies" />
     <MESSAGE value="Find Median Age" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find Median Age" />
+    <MESSAGE value="Popularity Analysis - Monotonic Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popularity Analysis - Monotonic Array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
