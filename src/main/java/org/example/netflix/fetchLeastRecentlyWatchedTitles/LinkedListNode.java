@@ -1,6 +1,6 @@
-package org.example.netflix.fetchMostRecentlyWatchedTitles;
+package org.example.netflix.fetchLeastRecentlyWatchedTitles;
 
-public class LinkedListNode {
+class LinkedListNode {
     public int key;
     public int data;
     public LinkedListNode next;

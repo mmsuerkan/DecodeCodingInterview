@@ -1,5 +1,7 @@
 package org.example.netflix.fetchMostRecentlyWatchedTitles;
 
+import org.example.netflix.fetchLeastRecentlyWatchedTitles.MyLinkedList;
+
 import java.util.HashMap;
 
 class LRUCache {

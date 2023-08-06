@@ -1,8 +1,10 @@
-package org.example.netflix.fetchMostRecentlyWatchedTitles;
+package org.example.netflix.fetchLeastRecentlyWatchedTitles;
+
+import org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode;
 
 public class MyLinkedList {
-    public LinkedListNode head;
-    public LinkedListNode tail;
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode head;
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode tail;
     public int size;
 
     public MyLinkedList(){
@@ -12,7 +14,7 @@ public class MyLinkedList {
     }
 
     public void insertAtHead(int key, int data) {
-        LinkedListNode newNode = new LinkedListNode(key, data);
+        org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode newNode = new org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode(key, data);
         if(this.head == null){
             this.head = newNode;
             this.tail = newNode;
@@ -26,7 +28,7 @@ public class MyLinkedList {
     }
 
     public void insertAtTail(int key, int data) {
-        LinkedListNode newNode = new LinkedListNode(key, data);
+        org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode newNode = new org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode(key, data);
         if (this.tail == null){
             this.tail = newNode;
             this.head = newNode;
@@ -43,15 +45,15 @@ public class MyLinkedList {
         this.size++;
     }
 
-    public LinkedListNode getHead(){
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode getHead(){
         return this.head;
     }
 
-    public LinkedListNode getTail(){
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode getTail(){
         return this.tail;
     }
 
-    public LinkedListNode removeNode(LinkedListNode node){
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode removeNode(org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode node){
         if(node == null){
             return null;
         }
@@ -75,7 +77,7 @@ public class MyLinkedList {
     }
 
     public void remove(int data){
-        LinkedListNode i = this.getHead();
+        org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode i = this.getHead();
         while(i != null){
             if(i.data == data){
                 this.removeNode(i);
@@ -84,11 +86,11 @@ public class MyLinkedList {
         }
     }
 
-    public LinkedListNode removeHead(){
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode removeHead(){
         return this.removeNode(this.head);
     }
 
-    public LinkedListNode removeTail(){
+    public org.example.netflix.fetchMostRecentlyWatchedTitles.LinkedListNode removeTail(){
         return this.removeNode(this.tail);
     }
 }
